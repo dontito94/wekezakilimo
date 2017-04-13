@@ -15,6 +15,7 @@ class RegisterController extends Controller
         $user->first_name=$request->first_name;
         $user->surname=$request->surname;
         $user->password=bcrypt($request->password);
+        $user->email=$request->email;
         $user->city=$request->city;
         $user->municipal=$request->municipal;
         $user->ward=$request->ward;

@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name','surname', 'password','city','municipal','ward','street','phone_number','birth_date',
+        'first_name','surname', 'password','email','city','municipal','ward','street','phone_number','birth_date',
     ];
 
     /**
@@ -27,4 +27,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+     public function farmer(){
+      return  $this->hasMany(Farmer::class);
+    }
 }
