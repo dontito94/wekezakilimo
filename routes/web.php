@@ -14,3 +14,41 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/kutuhusu', function () {
+    return view('kutuhusu');
+});
+Route::get('/wasiliana', function () {
+    return view('wasiliana');
+});
+Route::get('/msaada', function () {
+    return view('msaada');
+});
+Route::get('/kilimo', function () {
+    return view('kilimo');
+});
+Route::get('/mazao', function () {
+    return view('mazao');
+});
+Route::get('/pembejeo', function () {
+    return view('pembejeo');
+});
+Route::get('/maada', function () {
+    return view('maada');
+});
+Route::get('/nunua', function () {
+    return view('nunua');
+});
+Route::get('/home/agriculturaOfficer', function () {
+    return view('agriculturaOfficer');
+});
+Route::get('/home/agriculturalRetailer', function () {
+    return view('agriculturalRetailer');
+});
+Route::get('/home/agriculturatlInputs', function () {
+    return view('agriculturatlInputs');
+});

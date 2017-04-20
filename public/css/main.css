@@ -1,0 +1,121 @@
+html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+            .banner{
+                height: 140px;
+               width: 1300px;
+            }
+            .list-group-item .active{
+                margin-top: 30px;
+                margin-left: 40px;
+            }
+
+            .list-group-item {
+                margin-top: 10px;
+                margin-left: 40px;
+            }
+            .jumbotron{
+                margin-top: 30px;
+                 margin-bottom: 0px;
+                 margin-left: 10px;
+    background-image: url(../image/cov2.jpg);
+    background-position: 0% 25%;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+            }
+            .col-md-9{
+                margin-top: 10px;
+            }
+.btn-primary{
+  background-color: #334d00;
+}
+
+
+
+.btn-lg{
+    margin-left: 10px;
+}            
+.form-horizontal{
+background-color: transparent;
+margin-top: 40px;
+margin-bottom: 200px;
+margin-left: 70px;
+padding-top: 20px;
+padding-bottom: 20px;
+background-image: url(../image/cov2.jpg);
+
+}
+.form-nunua{
+    margin-top: 40px;
+margin-bottom: 200px;
+margin-left: 70px;
+padding-top: 20px;
+}
+hr {
+    margin-top: 30px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.footer{
+    background-color: green;
+    padding-top: 70px;
+}
+#nunua{
+    margin-top: 10px;
+}

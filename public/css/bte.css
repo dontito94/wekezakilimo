@@ -1,0 +1,59 @@
+
+body{
+padding-top: 100px;
+}
+
+.glyphicon {
+	color: #006600
+}
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #334d00;
+  color: #c2c2a3;
+}
+
+/*side nav*/
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #004d00;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #c2c2a3;
+
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+

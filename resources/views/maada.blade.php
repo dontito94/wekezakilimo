@@ -12,6 +12,7 @@
  <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <script src="js/respond.js"></script>
 
     </head>
@@ -22,32 +23,29 @@
         <div class="row">
        <div class="col-md-2">
     <div class="list-group">
-  <a href="{{ url('/kutuhusu') }}" class="list-group-item active">
-    Kutuhusu
-  </a>
-  <a href="{{ url('/wasiliana') }}" class="list-group-item">Wasiliana </a>
-  <a href="{{ url('/msaada') }}" class="list-group-item">Msaada </a>
-         @if (Route::has('login'))
+           @if (Route::has('login'))
 
                     @if (Auth::check())
                         <a href="{{ url('/home') }}" class="list-group-item">Home</a>
                     @else
-                        <a href="{{ url('/login') }}" class="list-group-item" >Ingia</a>
-      <a href="{{ url('/register') }}" class="list-group-item" >Jisajili</a>
+                        <a href="{{ url('/login') }}" class="list-group-item" >Login</a>
+      <a href="{{ url('/register') }}" class="list-group-item" >Register</a>
 
                     
                     @endif
                 </div>
             @endif
+  <a href="{{ url('/pembejeo') }}" class="list-group-item active">
+    Pembejeo
+  </a>
+  <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
+  <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo </a>
+  <a href="{{ url('/maada') }}" class="list-group-item">Maada</a>
+      
 </div>
 <div class="col-md-8">
-<div class="jumbotron">
- <h1>Karibu Wekeza kilimo!</h1>
-    <p>Wekeza kilimo inatufanya tunufaike kupitia kilimo kwakutuwezesha kujifunza,kununua,kutangaza na kujipatia pembejeo pamoja na mazao kwa urahisi.</p>
-    <p><a href="{{ url('/kutuhusu') }}" class="btn btn-primary btn-lg" role="button">Zaidi &raquo;</a>
-    </p>
-               
-                </div>
+ <h3>Mada mbalimbali</h3>
+<hr> 
 
 </div>
 </div>
@@ -69,9 +67,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
-
-

@@ -41,13 +41,8 @@
             @endif
 </div>
 <div class="col-md-8">
-<div class="jumbotron">
- <h1>Karibu Wekeza kilimo!</h1>
-    <p>Wekeza kilimo inatufanya tunufaike kupitia kilimo kwakutuwezesha kujifunza,kununua,kutangaza na kujipatia pembejeo pamoja na mazao kwa urahisi.</p>
-    <p><a href="{{ url('/kutuhusu') }}" class="btn btn-primary btn-lg" role="button">Zaidi &raquo;</a>
-    </p>
-               
-                </div>
+  <h3>kuhusu wekezakilimo</h3>
+<hr> 
 
 </div>
 </div>
@@ -64,14 +59,9 @@
                
             </div>
         </div>
-         <footer class="footer">
+       
+        <footer class="footer">
           <p class="text-center">wekezakilimo</p>
         </footer>
     </body>
 </html>
-
-
-
-
-
-

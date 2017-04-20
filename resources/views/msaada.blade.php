@@ -12,6 +12,7 @@
  <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <script src="js/respond.js"></script>
 
     </head>
@@ -21,7 +22,7 @@
         </div>
         <div class="row">
        <div class="col-md-2">
-    <div class="list-group">
+   <div class="list-group">
   <a href="{{ url('/kutuhusu') }}" class="list-group-item active">
     Kutuhusu
   </a>
@@ -41,13 +42,8 @@
             @endif
 </div>
 <div class="col-md-8">
-<div class="jumbotron">
- <h1>Karibu Wekeza kilimo!</h1>
-    <p>Wekeza kilimo inatufanya tunufaike kupitia kilimo kwakutuwezesha kujifunza,kununua,kutangaza na kujipatia pembejeo pamoja na mazao kwa urahisi.</p>
-    <p><a href="{{ url('/kutuhusu') }}" class="btn btn-primary btn-lg" role="button">Zaidi &raquo;</a>
-    </p>
-               
-                </div>
+ <h3>Msaada</h3>
+<hr> 
 
 </div>
 </div>
@@ -69,9 +65,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
-
-
