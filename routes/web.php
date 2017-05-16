@@ -43,8 +43,11 @@ Route::get('/maada', function () {
 Route::get('/nunua', function () {
     return view('nunua');
 });
-Route::get('/home/agriculturaOfficer', function () {
+Route::get('/agriculturaOfficer', function () {
     return view('agriculturaOfficer');
+});
+Route::get('/farmer', function () {
+    return view('farmer');
 });
 Route::get('/home/agriculturalRetailer', function () {
     return view('agriculturalRetailer');
@@ -52,3 +55,5 @@ Route::get('/home/agriculturalRetailer', function () {
 Route::get('/home/agriculturatlInputs', function () {
     return view('agriculturatlInputs');
 });
+
+Route::resource('topics', 'TopicController');

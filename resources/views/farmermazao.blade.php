@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{{ config('app.locale') }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <script src="js/respond.js"></script>
+
+
+</head>
+<body>
+<div class="row1">
+    <img src="image/wekezakilimo(2).jpg" class="banner">
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="list-group">
+            @if (Route::has('login'))
+
+                @if (Auth::check())
+                    <a href="{{ url('/home') }}" class="list-group-item">Home</a>
+                @else
+                    <a href="{{ url('/login') }}" class="list-group-item" >Login</a>
+                    <a href="{{ url('/register') }}" class="list-group-item" >Register</a>
+
+
+                @endif
+        </div>
+        @endif
+        <a href="{{ url('/pembejeo') }}" class="list-group-item active">
+            Pembejeo
+        </a>
+        <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
+        <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo </a>
+        <a href="{{ url('/maada') }}" class="list-group-item">Maada</a>
+
+    </div>
+    <div class="col-md-9">
+        <h3>Mazao</h3>
+        <hr>
+        <div class="row">
+            <div class="row2">
+                <button class="btn btn-primary"   onclick="window.location.href='{{ url('/mazao') }}'">Mazao yaliopo</button>
+                <button id = "popup" onclick ="div_show()">Popup</button>
+                <div id="popupContact">
+
+                    <!-- contact us form -->
+                    <form action="#" method="post" id="form" >
+                        <img src="images/3.png" id="close" onclick ="div_hide()" />
+                        <h2>Contact Us</h2><hr/>
+                        <input type="text" name="name" id="name" placeholder="Name"/>
+
+                        <input type="text" name="email" id="email" placeholder="Email"/>
+
+                        <textarea name="message" placeholder="Message" id="msg"></textarea>
+
+                        <a id="submit" href="javascript: check_empty()">Send</a>
+
+                        <p><span>Note :</span> In this demo, we have stopped email sending functionality.</p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+
+                <div class="thumbnail">
+                    <img src="image/kk2.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Mchele Mbeya</h3>
+                        <p><strong>Tsh.</strong></p>
+                        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="image/k10.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Vitunguu</h3>
+                        <p><strong>Tsh.</strong></p>
+                        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="image/k10.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Nyanya</h3>
+                        <p><strong>Tsh.</strong></p>
+                        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+<div class="flex-center position-ref full-height">
+
+
+    <div class="content">
+
+    </div>
+</div>
+<footer class="footer">
+    <p class="text-center">wekezakilimo</p>
+</footer>
+</body>
+</html>

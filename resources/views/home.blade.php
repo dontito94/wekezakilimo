@@ -15,7 +15,7 @@
   </a>
   <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
   <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo </a>
-  <a href="{{ url('/maada') }}" class="list-group-item">Maada</a>
+  <a href="{{ url('/topics') }}" class="list-group-item">Maada</a>
      <!-- Right Side Of Navbar -->
       <a href=""> <ul class="nav nav-pills">
                         <!-- Authentication Links -->
