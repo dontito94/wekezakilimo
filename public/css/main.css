@@ -1,4 +1,4 @@
-html, body {
+ html, body {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
@@ -81,6 +81,10 @@ html, body {
   background-color: #334d00;
 }
 
+.btn-group{
+    float: left;
+}
+
 
 
 .btn-lg{
@@ -118,4 +122,8 @@ hr {
 }
 #nunua{
     margin-top: 10px;
+}
+
+.btn .btn-default .btn-xs{
+    margin-left: 20px;
 }

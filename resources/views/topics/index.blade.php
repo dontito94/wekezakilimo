@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
         <meta charset="utf-8">
@@ -44,32 +44,43 @@
       
 </div>
 <div class="col-md-8">
- <h3>Mada mbalimbali</h3>
+  <div class="row">
+<div class="col-md-2">
+  <h3>Mada</h3>
+</div>
+<div class="col-md-2">
+  <h3><a href="{!! route('topics.index') !!}">zilizopo</a></h3>
+</div>
+<div class="col-md-3">
+  <h3><a href="{!! route('topics.create') !!}">Mada mpya</a></h3>
+</div>
+   </div>
 <hr> 
-   <section class="content-header">
-        <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('topics.create') !!}">Mada mpya</a>
-        </h1>
-    </section>
-    <div class="content">
-        <div class="clearfix"></div>
+   @include('flash::message')
+  @foreach($topics as $topic)
+ <div class="row">
+<h1>{!! $topic->title !!}</h1>
+<p>{!! $topic->description !!}</p>
 
-        @include('flash::message')
+ {!! Form::open(['route' => ['topics.destroy', $topic->id], 'method' => 'delete']) !!}
+                <div class='btn-group'>
+                    <a href="{!! route('topics.show', [$topic->id]) !!}" class='btn btn-success btn-xs'>angalia</a>
+                    <a href="{!! route('topics.edit', [$topic->id]) !!}" class='btn btn-info btn-xs'>Rekebisha</a>
+                    {!! Form::button('ondoa', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('kweli wataka ondoa?')"]) !!}
+                </div>
+                {!! Form::close() !!}
 
-        <div class="clearfix"></div>
-        <div class="box box-primary">
-            <div class="box-body">
-                    @include('topics.table')
-            </div>
-        </div>
-    </div>
+</div>
+    @endforeach
+
+            
+      
 
 
 </div>
-</div>
+
 </div>
 
-       </div>
 
 
         </div>
@@ -80,8 +91,9 @@
                
             </div>
         </div>
-         <footer class="footer">
+        
+    </body>
+     <footer class="footer">
           <p class="text-center">wekezakilimo</p>
         </footer>
-    </body>
 </html>

@@ -44,7 +44,17 @@
       
 </div>
 <div class="col-md-9">
- <h3>Pembejeo za kilimo</h3>
+ <div class="row">
+<div class="col-md-2">
+  <h3>Pembejeo</h3>
+</div>
+<div class="col-md-2">
+  <h3><a href="{!! route('topics.index') !!}">Zilizopo</a></h3>
+</div>
+<div class="col-md-3">
+  <h3><a href="{!! route('topics.create') !!}">Pembejeo mpya</a></h3>
+</div>
+   </div>
 <hr> 
 <div class="row">
   <div class="col-sm-6 col-md-4">

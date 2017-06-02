@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class="row1">
-<img src="image/wekezakilimo(2).jpg" class="banner">
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
         </div>
         <div class="row">
        <div class="col-md-2">
@@ -44,7 +44,7 @@
       
 </div>
 <div class="col-md-8">
- <h3>Mada mbalimbali</h3>
+ <h3>Chapa Mada</h3>
 <hr> 
    
     <div class="content">

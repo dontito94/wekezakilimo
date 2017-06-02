@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="row">
-        <div class="co">
+    
            <div class="row1">
 <img src="image/wekezakilimo(2).jpg" class="banner">
         </div>
@@ -10,12 +9,10 @@
        <div class="col-md-2">
     <div class="list-group">
          
-  <a href="{{ url('/pembejeo') }}" class="list-group-item active">
-    Pembejeo
-  </a>
+  <a href="{{ url('/pembejeo/officer') }}" class="list-group-item active"> Pembejeo </a>
   <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
- 
-  <a href="{{ url('/maada') }}" class="list-group-item">Maada</a>
+  <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo</a>
+  <a href="{{ url('/topics/2') }}" class="list-group-item">Mada</a>
      <!-- Right Side Of Navbar -->
                     <ul class="nav nav-pills">
                         <!-- Authentication Links -->
@@ -45,11 +42,12 @@
                         @endif
                     </ul>   
 </div>
-<div class="col-md-8">
- <h3>Karibu wekezakilimo</h3>
-<hr> 
 
 </div>
+<div class="col-md-8">
+ <h3>Mnunuzi</h3>
+<hr> 
+
 </div>
 </div>
 

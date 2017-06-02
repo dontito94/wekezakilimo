@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -43,17 +43,17 @@ Route::get('/maada', function () {
 Route::get('/nunua', function () {
     return view('nunua');
 });
-Route::get('/agriculturaOfficer', function () {
+Route::get('/agriculturaOfficer/home', function () {
     return view('agriculturaOfficer');
 });
 Route::get('/farmer', function () {
     return view('farmer');
 });
-Route::get('/home/agriculturalRetailer', function () {
+Route::get('/agriculturalRetailer', function () {
     return view('agriculturalRetailer');
 });
-Route::get('/home/agriculturatlInputs', function () {
-    return view('agriculturatlInputs');
+Route::get('/agriculturalInputs', function () {
+    return view('agriculturalInputs');
 });
 
 Route::resource('topics', 'TopicController');
