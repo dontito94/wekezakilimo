@@ -43,7 +43,7 @@ Route::get('/maada', function () {
 Route::get('/nunua', function () {
     return view('nunua');
 });
-Route::get('/agriculturaOfficer/home', function () {
+Route::get('/agriculturalOfficer/home', function () {
     return view('agriculturaOfficer');
 });
 Route::get('/farmer', function () {

@@ -3,7 +3,7 @@
 @section('content')
     
            <div class="row1">
-<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner img-reponsive">
         </div>
         <div class="row">
        <div class="col-md-2">
