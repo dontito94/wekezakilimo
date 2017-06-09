@@ -32,6 +32,7 @@ Route::get('/maada', function () {
 Route::get('/nunua', function () {
     return view('nunua');
 });
+
 Route::get('/agriculturalOfficer/mazao', function () {
     return view('agriculturalOfficer.mazao');
 });
@@ -40,6 +41,8 @@ Route::get('/agriculturalOfficer/pembejeo', function () {
 });
 Route::get('/farmer/home', function () {
     return view('farmer.home');
+Route::get('/agriculturalOfficer/home', function () {
+    return view('agriculturaOfficer');
 });
 Route::get('/farmer/mazao', function () {
     return view('farmer.mazao');

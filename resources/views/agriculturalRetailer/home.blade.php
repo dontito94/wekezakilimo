@@ -3,7 +3,11 @@
 @section('content')
     
            <div class="row1">
+<<<<<<< HEAD:resources/views/agriculturalRetailer/home.blade.php
 <img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
+=======
+<img src="image/wekezakilimo(2).jpg" class="banner img-responsive">
+>>>>>>> c3f065b6f718686e2aace78eee16c31bb2b66549:resources/views/agriculturalRetailer.blade.php
         </div>
         <div class="row">
        <div class="col-md-2">
