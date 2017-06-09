@@ -25,35 +25,48 @@ Route::get('/kutuhusu', function () {
 Route::get('/wasiliana', function () {
     return view('wasiliana');
 });
-Route::get('/msaada', function () {
-    return view('msaada');
-});
-Route::get('/kilimo', function () {
-    return view('kilimo');
-});
-Route::get('/mazao', function () {
-    return view('mazao');
-});
-Route::get('/pembejeo', function () {
-    return view('pembejeo');
-});
+
 Route::get('/maada', function () {
     return view('maada');
 });
 Route::get('/nunua', function () {
     return view('nunua');
 });
-Route::get('/agriculturaOfficer/home', function () {
-    return view('agriculturaOfficer');
+Route::get('/agriculturalOfficer/mazao', function () {
+    return view('agriculturalOfficer.mazao');
 });
-Route::get('/farmer', function () {
-    return view('farmer');
+Route::get('/agriculturalOfficer/pembejeo', function () {
+    return view('agriculturalOfficer.pembejeo');
+});
+Route::get('/farmer/home', function () {
+    return view('farmer.home');
+});
+Route::get('/farmer/mazao', function () {
+    return view('farmer.mazao');
+});
+Route::get('/farmer/pembejeo', function () {
+    return view('farmer.pembejeo');
 });
 Route::get('/agriculturalRetailer', function () {
     return view('agriculturalRetailer');
 });
-Route::get('/agriculturalInputs', function () {
-    return view('agriculturalInputs');
+Route::get('/agriculturalInputs/home', function () {
+    return view('agriculturalInputSupplier.home');
+});
+Route::get('/agriculturalInputs/mazao', function () {
+    return view('agriculturalInputSupplier.mazao');
+});
+Route::get('/agriculturalInputs/pembejeo', function () {
+    return view('agriculturalInputSupplier.pembejeo');
+});
+Route::get('/agriculturalRetailer/home', function () {
+    return view('agriculturalRetailer.home');
+});
+Route::get('/agriculturalRetailer/mazao', function () {
+    return view('agriculturalRetailer.mazao');
+});
+Route::get('/agriculturalRetailer/pembejeo', function () {
+    return view('agriculturalRetailer.pembejeo');
 });
 
 Route::resource('topics', 'TopicController');

@@ -3,16 +3,16 @@
 @section('content')
     
            <div class="row1">
-<img src="image/wekezakilimo(2).jpg" class="banner">
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
         </div>
         <div class="row">
        <div class="col-md-2">
     <div class="list-group">
          
-  <a href="{{ url('/pembejeo/officer') }}" class="list-group-item active"> Pembejeo </a>
-  <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo</a>
-  <a href="{{ url('/topics/2') }}" class="list-group-item">Mada</a>
+  <a href="{{ url('/farmer/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
+  <a href="{{ url('/farmer/mazao') }}" class="list-group-item">Mazao</a>
+  <a href="{{ url('/farmer/kilimo') }}" class="list-group-item">KIlimo</a>
+  <a href="{{ url('/topics/{id}') }}" class="list-group-item">Mada</a>
      <!-- Right Side Of Navbar -->
                     <ul class="nav nav-pills">
                         <!-- Authentication Links -->
@@ -45,7 +45,7 @@
 
 </div>
 <div class="col-md-8">
- <h3>Mnunuzi</h3>
+ <h3>mkulima</h3>
 <hr> 
 
 </div>
@@ -55,13 +55,7 @@
 
 
         </div>
-        <div class="flex-center position-ref full-height">
-            
-
-            <div class="content">
-               
-            </div>
-        </div>
+    
     
 </html>
 

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">        
-<img src="image/wekezakilimo(2).jpg" class="banner">
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
 </div>
         
         <div class="row">
@@ -10,12 +10,12 @@
        <div class="col-md-2">
     <div class="list-group">
          
-  <a href="{{ url('/pembejeo') }}" class="list-group-item active">
-    Pembejeo
+  <a href="{{ url('/agriculturalOfficer/home') }}" class="list-group-item active">
+    afisa kilimo
   </a>
-  <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo </a>
-  <a href="{{ url('/topics') }}" class="list-group-item">Maada</a>
+  <a href="{{ url('/agriculturalInputs/home') }}" class="list-group-item">Muuza pembejeo</a>
+  <a href="{{ url('/agriculturalRetailer/home') }}" class="list-group-item">Mnunuzi </a>
+  <a href="{{ url('/farmer/home') }}" class="list-group-item">Mkulima</a>
      <!-- Right Side Of Navbar -->
       <a href=""> <ul class="nav nav-pills">
                         <!-- Authentication Links -->

@@ -21,12 +21,12 @@
 <img src="image/wekezakilimo(2).jpg" class="banner">
         </div>
         <div class="row">
-       <div class="col-md-2">
+     <div class="col-md-2">
     <div class="list-group">
            @if (Route::has('login'))
 
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}" class="list-group-item">Home</a>
+                        <a href="{{ url('/agriculturalOfficer/home') }}" class="list-group-item">Home</a>
                     @else
                         <a href="{{ url('/login') }}" class="list-group-item" >Login</a>
       <a href="{{ url('/register') }}" class="list-group-item" >Register</a>
@@ -35,11 +35,10 @@
                     @endif
                 </div>
             @endif
-  <a href="{{ url('/pembejeo') }}" class="list-group-item active">
+  <a href="{{ url('/agriculturalOfficer/pembejeo') }}" class="list-group-item active">
     Pembejeo
   </a>
-  <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo </a>
+  <a href="{{ url('/agriculturalOfficer/mazao') }}" class="list-group-item">Mazao</a>
   <a href="{{ url('/topics') }}" class="list-group-item">Maada</a>
       
 </div>
@@ -72,26 +71,10 @@
 
 </div>
     @endforeach
-
-            
-      
-
-
 </div>
 
 </div>
-
-
-
-        </div>
-        <div class="flex-center position-ref full-height">
-            
-
-            <div class="content">
-               
-            </div>
-        </div>
-        
+        </div>    
     </body>
      <footer class="footer">
           <p class="text-center">wekezakilimo</p>
