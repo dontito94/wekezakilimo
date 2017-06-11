@@ -26,7 +26,7 @@
            @if (Route::has('login'))
 
                     @if (Auth::check())
-                        <a href="{{ url('/agriculturalOfficer/home') }}" class="list-group-item">Home</a>
+                        <a href="{{ url('/home') }}" class="list-group-item">Home</a>
                     @else
                         <a href="{{ url('/login') }}" class="list-group-item" >Login</a>
       <a href="{{ url('/register') }}" class="list-group-item" >Register</a>
@@ -35,10 +35,9 @@
                     @endif
                 </div>
             @endif
-   <a href="{{ url('/agriculturalOfficer/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
-  <a href="{{ url('/agriculturalOfficer/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/topics/{id}') }}" class="list-group-item">Mada</a>
-      
+   <a href="{{ url('/agriculturalInputs/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
+  <a href="{{ url('/agriculturalInputs/mazao') }}" class="list-group-item">Mazao</a>
+  <a href="{{ url('/agriculturalRetailer/Mada') }}" class="list-group-item">Mada</a>
 </div>
 <div class="col-md-9">
  <div class="row">

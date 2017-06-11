@@ -2,11 +2,8 @@
 
 @section('content')
     <div class="row">        
-<<<<<<< HEAD
-<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
-=======
-<img src="image/wekezakilimo(2).jpg" class="banner img-responsive">
->>>>>>> c3f065b6f718686e2aace78eee16c31bb2b66549
+
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner img-responsive">
 </div>
         
         <div class="row">
@@ -55,7 +52,6 @@
 
 <div class="col-md-8">
  <h3>Karibu wekezakilimo</h3>
-<hr> 
   <hr />
 
 
@@ -149,13 +145,6 @@
 
 
         </div>
-        <div class="flex-center position-ref full-height">
-            
-
-            <div class="content">
-               
-            </div>
-        </div>
         <footer class="footer-distributed">
 
       <div class="footer-right">
@@ -174,7 +163,6 @@
   <a href="{{ url('/msaada') }}">Msaada </a> 
         </p>
 
-        <small>wekezakilimo &copy; 2017</small>
       </div>
 
     </footer>

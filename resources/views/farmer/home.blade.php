@@ -9,17 +9,11 @@
        <div class="col-md-2">
     <div class="list-group">
          
-<<<<<<< HEAD:resources/views/farmer/home.blade.php
   <a href="{{ url('/farmer/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
   <a href="{{ url('/farmer/mazao') }}" class="list-group-item">Mazao</a>
   <a href="{{ url('/farmer/kilimo') }}" class="list-group-item">KIlimo</a>
-  <a href="{{ url('/topics/{id}') }}" class="list-group-item">Mada</a>
-=======
-  <a href="{{ url('/pembejeo/officer') }}" class="list-group-item active"> Pembejeo </a>
-  <a href="{{ url('/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/kilimo') }}" class="list-group-item">KIlimo</a>
-  <a href="{{ url('/topics/3') }}" class="list-group-item">Mada</a>
->>>>>>> c3f065b6f718686e2aace78eee16c31bb2b66549:resources/views/farmer.blade.php
+  <a href="{{ url('/farmer/Mada') }}" class="list-group-item">Mada</a>
+
      <!-- Right Side Of Navbar -->
                     <ul class="nav nav-pills">
                         <!-- Authentication Links -->

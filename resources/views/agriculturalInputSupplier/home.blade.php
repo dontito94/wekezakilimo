@@ -3,11 +3,7 @@
 @section('content')
     
            <div class="row1">
-<<<<<<< HEAD:resources/views/agriculturalInputSupplier/home.blade.php
-<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
-=======
-<img src="image/wekezakilimo(2).jpg" class="banner img-responsive">
->>>>>>> c3f065b6f718686e2aace78eee16c31bb2b66549:resources/views/agriculturalInputs.blade.php
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner img-responsive">
         </div>
         <div class="row">
        <div class="col-md-2">
@@ -15,8 +11,7 @@
          
   <a href="{{ url('/agriculturalInputs/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
   <a href="{{ url('/agriculturalInputs/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/agriculturalInputs/kilimo') }}" class="list-group-item">KIlimo</a>
-  <a href="{{ url('/topics/{id}') }}" class="list-group-item">Mada</a>
+  <a href="{{ url('/agriculturalRetailer/Mada') }}" class="list-group-item">Mada</a>
      <!-- Right Side Of Navbar -->
                     <ul class="nav nav-pills">
                         <!-- Authentication Links -->

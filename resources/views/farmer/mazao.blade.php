@@ -26,7 +26,7 @@
            @if (Route::has('login'))
 
                     @if (Auth::check())
-                        <a href="{{ url('/farmer/home') }}" class="list-group-item">Home</a>
+                        <a href="{{ url('/home') }}" class="list-group-item">Home</a>
                     @else
                         <a href="{{ url('/login') }}" class="list-group-item" >Login</a>
       <a href="{{ url('/register') }}" class="list-group-item" >Register</a>
@@ -39,15 +39,14 @@
     Pembejeo
   </a>
   <a href="{{ url('/farmer/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/farmer/kilimo') }}" class="list-group-item">KIlimo </a>
-  <a href="{{ url('/topics/{id}') }}" class="list-group-item">Maada</a>
+  <a href="{{ url('/farmer/Mada') }}" class="list-group-item">Maada</a>
       
 </div>
 <div class="col-md-9">
   <div class="row">
 
 <div class="col-md-2">
-  <h3><a href="{!! route('topics.index') !!}">Yaliyopo</a></h3>
+  <h3><a href="/farmer/mazao">Yaliyopo</a></h3>
 </div>
 <div class="col-md-3">
   <h3><a href="{!! route('topics.create') !!}">Mazao mapya</a></h3>
