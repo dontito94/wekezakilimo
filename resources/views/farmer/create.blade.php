@@ -46,23 +46,25 @@
 
 </div>
 <div class="col-md-8">
- <h3>mkulima</h3>
+ <h3>zao jipya</h3>
 <hr> 
- <div class="panel-heading"><strong>Mkulima</strong></div>
-                      <div class="panel-body">
-                              <p>Mfumo unamsaidia mkulima kujitangaza na kufanya biashara bila kulanguliwa,
-                              pia unampa nafasi ya kujifunza kuhusu mazao mbali mbali na pia kununua pembeleo za kilimo
-                              kwa bei rahisi na kwa urahisi pia</p>
-                         <p><a href="#" class="btn btn-info">Endelea >></a></p>
-                            </div>
-                    </div>
+ <form method="post" action="/farmer/index" >
+     name:<br>
+     <input type="text" name="name"><br>
+     price:<br>
+     <input type="integer" name="price">
+     <input type="file" name="image">
+     <input type="hidden" name="_token" value="{{csrf_token()}}">
+      <input type="submit" name="upload" />
+ </form>
+                  
 </div>
 </div>
 
-       </div>
+       
 
 
-        </div>
+        
     
     
 </html>

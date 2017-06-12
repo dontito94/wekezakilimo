@@ -80,3 +80,7 @@ Route::get('/agriculturalRetailer/Mada','TopicController@getAgriculturalRetailer
 Route::get('/agriculturalInputs/Mada','TopicController@getAgriculturalInputsMada');
 
  
+
+
+Route::resource('products', 'ProductsController');
+

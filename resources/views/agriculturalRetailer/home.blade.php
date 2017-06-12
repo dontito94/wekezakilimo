@@ -46,7 +46,14 @@
 <div class="col-md-8">
  <h3>Mnunuzi</h3>
 <hr> 
-
+  <div class="panel-heading"><strong>Mfanya biashara</strong></div>
+                      <div class="panel-body">
+                              <p>Mfumo unamkutanisha mfanya biashara na mkulima katika kufanya biashara
+                            na pia unaweka ukaribu kati yao.Mfanyabiashara anakuwa na uhuru wa kuchaguwa
+                            bidhaa kutoka kwa wakulima mbalimbali walioko kwenye mfumo.  </p>
+                            <p><a href="#" class="btn btn-info">Endelea >></a></p>
+                            </div>
+                    </div>
 </div>
 </div>
 

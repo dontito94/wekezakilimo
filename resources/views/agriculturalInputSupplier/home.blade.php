@@ -46,7 +46,13 @@
 <div class="col-md-8">
  <h3>Muuza Pembejeo</h3>
 <hr> 
-
+  <div class="panel-heading"><strong>Muuza pembejeo</strong></div>
+                      <div class="panel-body">
+                             <p>Mfumo unamsaidia mkulima kujitangaza na kufanya biashara bila kulanguliwa,
+                              pia unampa nafasi ya kujifunza kuhusu mazao mbali mbali na pia kununua pembeleo za kilimo
+                              kwa bei rahisi na kwa urahisi pia</p>
+                            <p><a href="#" class="btn btn-info">Endelea >></a></p>
+                            </div>
 </div>
 </div>
 

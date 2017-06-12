@@ -45,7 +45,14 @@
 <div class="col-md-8">
  <h3>Afisa kilimo</h3>
 <hr> 
-
+   <div class="panel-heading"><strong>Afisa kilimo</strong></div>
+                      <div class="panel-body">
+                             <p>Afisa kilimo anapata urahisi wa kutoa suluisho la magonjwa na pia kutoa ushauri na elimu
+                              kuhusu jinsi ya kutumia mbinu za kisasa kwenye kilimo na ufugaji kwa ujumla.
+                              Anapata urahisi pia kufanya mawasiliano na wakulima walaioko katika eneo lake hususani katika 
+                              maswala ya matibabu na kueneza elimu ya kilimo.</p>
+                            <p><a href="#" class="btn btn-info">Read more >></a></p>
+                            </div>
 </div>
 </div>
 
