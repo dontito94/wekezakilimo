@@ -1,5 +1,4 @@
  <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,29 +9,26 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
-
 Route::get('/kutuhusu', function () {
     return view('kutuhusu');
 });
 Route::get('/wasiliana', function () {
     return view('wasiliana');
 });
-
 Route::get('/maada', function () {
     return view('maada');
 });
 Route::get('/nunua', function () {
     return view('nunua');
 });
-
+Route::get('/agriculturalOfficer/home', function () {
+    return view('agriculturalOfficer.home');
+});
 Route::get('/agriculturalOfficer/mazao', function () {
     return view('agriculturalOfficer.mazao');
 });
@@ -41,8 +37,6 @@ Route::get('/agriculturalOfficer/pembejeo', function () {
 });
 Route::get('/farmer/home', function () {
     return view('farmer.home');
-Route::get('/agriculturalOfficer/home', function () {
-    return view('agriculturaOfficer');
 });
 Route::get('/farmer/mazao', function () {
     return view('farmer.mazao');
@@ -71,5 +65,9 @@ Route::get('/agriculturalRetailer/mazao', function () {
 Route::get('/agriculturalRetailer/pembejeo', function () {
     return view('agriculturalRetailer.pembejeo');
 });
-
 Route::resource('topics', 'TopicController');
+Route::get('/farmer/Mada','TopicController@getFarmerMada');
+Route::get('/agriculturalRetailer/Mada','TopicController@getAgriculturalRetailerMada');
+Route::get('/agriculturalInputs/Mada','TopicController@getAgriculturalInputsMada');
+ 
+Route::resource('products', 'ProductsController');
