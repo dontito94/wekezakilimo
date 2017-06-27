@@ -53,56 +53,24 @@
 </div>
    </div>
 <hr> 
+@foreach($products->chunk(3) as $productChunk)
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="{{URL::asset("image/kk2.jpg")}}" alt="...">
-      <div class="caption">
-        <h3>Mchele Mbeya</h3>
-        <p><strong>Tsh.</strong></p>
-        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
-      </div>
-    </div>
-  </div>
-
+  @foreach($productChunk as $product)
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="{{URL::asset("image/k10.jpg")}}" alt="...">
+      <img src="{{URL::asset("$product->imagePath")}}" alt="...">
       <div class="caption">
-        <h3>Vitunguu</h3>
-        <p><strong>Tsh.</strong></p>
-        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
+        <h3>{{$product->title}}</h3>
+        <p><strong>Tsh.{{$product->price}}</strong></p>
+        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a></p>
       </div>
     </div>
   </div>
-  
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="{{URL::asset("image/kk2.jpg")}}" alt="...">
-      <div class="caption">
-        <h3>Nyanya</h3>
-        <p><strong>Tsh.</strong></p>
-        <p><a href="{{ url('/nunua') }}" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
-      </div>
-    </div>
-  </div>
-  
-
+  @endforeach
+</div>
+@endforeach
 </div>
 </div>
-</div>
-</div>
-
-       </div>
-
-
-        </div>
-        <div class="flex-center position-ref full-height">
-            
-
-            <div class="content">
-               
-            </div>
         </div>
          <footer class="footer">
           <p class="text-center">wekezakilimo</p>

@@ -35,43 +35,54 @@ Route::get('/nunua', function () {
 Route::get('/agriculturalOfficer/home', function () {
     return view('agriculturalOfficer.home');
 });
-Route::get('/agriculturalOfficer/mazao', function () {
-    return view('agriculturalOfficer.mazao');
-});
-Route::get('/agriculturalOfficer/pembejeo', function () {
-    return view('agriculturalOfficer.pembejeo');
-});
+Route::get('/agriculturalOfficer/mazao', [
+
+'uses' => 'ProductsController@getAfisaMazao'
+    ]);
+
+Route::get('/agriculturalOfficer/pembejeo', [
+
+'uses' => 'PembejeoController@getIndex'
+    ]);
 Route::get('/farmer/home', function () {
     return view('farmer.home');
 });
 
-Route::get('/farmer/mazao', function () {
-    return view('farmer.mazao');
-});
-Route::get('/farmer/pembejeo', function () {
-    return view('farmer.pembejeo');
-});
+Route::get('/farmer/mazao', [
+
+'uses' => 'ProductsController@getIndex'
+    ]);
+Route::get('/farmer/pembejeo', [
+
+'uses' => 'PembejeoController@getIndex'
+    ]);
 Route::get('/agriculturalRetailer', function () {
     return view('agriculturalRetailer');
 });
 Route::get('/agriculturalInputs/home', function () {
     return view('agriculturalInputSupplier.home');
 });
-Route::get('/agriculturalInputs/mazao', function () {
-    return view('agriculturalInputSupplier.mazao');
-});
-Route::get('/agriculturalInputs/pembejeo', function () {
-    return view('agriculturalInputSupplier.pembejeo');
-});
+Route::get('/agriculturalInputs/mazao', [
+
+'uses' => 'ProductsController@getMuuzapembejeoMazao'
+    ]);
+
+Route::get('/agriculturalInputs/pembejeo', [
+
+'uses' => 'PembejeoController@getPembejeo'
+    ]);
 Route::get('/agriculturalRetailer/home', function () {
     return view('agriculturalRetailer.home');
 });
-Route::get('/agriculturalRetailer/mazao', function () {
-    return view('agriculturalRetailer.mazao');
-});
-Route::get('/agriculturalRetailer/pembejeo', function () {
-    return view('agriculturalRetailer.pembejeo');
-});
+Route::get('/agriculturalRetailer/mazao', [
+
+'uses' => 'ProductsController@getMnunuziMazao'
+    ]);
+
+Route::get('/agriculturalRetailer/pembejeo', [
+
+'uses' => 'PembejeoController@getIndex'
+    ]);
 
 Route::resource('topics', 'TopicController');
 

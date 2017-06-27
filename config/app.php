@@ -234,6 +234,7 @@ Prettus\Repository\Providers\RepositoryServiceProvider::class,
 'Html'      => Collective\Html\HtmlFacade::class,
 'Flash'     => Laracasts\Flash\Flash::class,
 
+
     ],
 
 ];

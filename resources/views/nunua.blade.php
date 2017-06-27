@@ -60,72 +60,17 @@
   
   </div>
   <div class="col-md-5">
-<form class="form-nunua" role="form" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('first_name') ? ' has-error' : '' }}" id="nunua">
-                            <label for="first_name" class="col-md-4 control-label" ></label>
-
-                            <div class="col-md-6">
-                                <input id="first_name" type="string" placeholder="jina la zao" class="form-control" name="first_name" value="{{ old('first_name') }}" required autofocus>
-
-                                @if ($errors->has('first_name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('first_name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-                          <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}" id="nunua">
-                            <label for="name" class="col-md-4 control-label"></label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" placeholder="kiasi" class="form-control" name="name" value="{{ old('surname') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}" id="nunua">
-                            <label for="email" class="col-md-4 control-label"></label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" placeholder="bei ya kununulia" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                       
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label"></label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" placeholder="" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}" id="nunua">
-                            <label for="phone_number" class="col-md-4 control-label"></label>
-
-                           
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Nunua
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+<form action="/your-server-side-code" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_jiDP4GcoVI8hxNTrf51oe4TS"
+    data-amount="999"
+    data-name="Demo Site"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form>
   </div>
 </div>
 </div>
