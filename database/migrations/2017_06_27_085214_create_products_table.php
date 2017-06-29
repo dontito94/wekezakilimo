@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateProductsTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -15,12 +15,11 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('imagePath');
-            $table->string('name');
-            $table->string('description');
-            $table->integer('price');
             $table->timestamps();
-            $table->softDeletes();
+            $table->string('imagePath');
+            $table->string('title');
+            $table->text('description');
+            $table->integer('price');
         });
     }
 
@@ -31,6 +30,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('products');
+        Schema::dropIfExists('products');
     }
 }

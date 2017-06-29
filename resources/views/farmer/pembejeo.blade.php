@@ -43,66 +43,31 @@
 <div class="col-md-9">
  <div class="row">
 <div class="col-md-2">
-  <h3>Pembejeo</h3>
-</div>
-<div class="col-md-2">
-  <h3><a href="/agriculturalOfficer/pembejeo">Zilizopo</a></h3>
+  <h3><a href="/farmer/pembejeo">Zilizopo</a></h3>
 </div>
    </div>
 <hr> 
+@foreach($agriculturalInputs->chunk(3) as $agriculturalInputChunk)
 <div class="row">
+  @foreach($agriculturalInputChunk as $agriculturalInput)
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="{{ URL::asset("image/k18.jpg") }}" alt="...">
+      <img src="{{ URL::asset("$agriculturalInput->imagePath") }}" alt="...">
       <div class="caption">
-        <h3>Jembe la kusukuma</h3>
-        <p><strong>Tsh.</strong></p>
+        <h3>{{$agriculturalInput->title}}</h3>
+        <p><strong>Tsh.{{$agriculturalInput->price}}</strong></p>
         <p><a href="#" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
       </div>
     </div>
   </div>
 
-<div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="{{ URL::asset("image/k18.jpg") }}" alt="...">
-      <div class="caption">
-        <h3>jembe</h3>
-        <p><strong>Tsh.</strong></p>
-        <p><a href="#" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="{{ URL::asset("image/k18.jpg") }}" alt="...">
-      <div class="caption">
-        <h3>jembe</h3>
-        <p><strong>Tsh.</strong></p>
-        <p><a href="#" class="btn btn-primary" role="button">nunua</a> <a href="#" class="btn btn-default" role="button">wasiliana</a></p>
-      </div>
-    </div>
-  </div>
-  
-
+@endforeach
 </div>
-
+@endforeach
 </div>
 </div>
 </div>
-
-       </div>
-
-
-        </div>
-        <div class="flex-center position-ref full-height">
-            
-
-            <div class="content">
-               
-            </div>
-        </div>
-         <footer class="footer">
+ <footer class="footer">
           <p class="text-center">wekezakilimo</p>
         </footer>
     </body>

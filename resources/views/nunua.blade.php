@@ -60,72 +60,59 @@
   
   </div>
   <div class="col-md-5">
-<form class="form-nunua" role="form" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('first_name') ? ' has-error' : '' }}" id="nunua">
-                            <label for="first_name" class="col-md-4 control-label" ></label>
+      <div class="form-group">
+          {!! Form::label('firstName', 'First Name:') !!}
+          {!! Form::text('first_name', null, ['class' => 'form-control']) !!}
+      </div>
 
-                            <div class="col-md-6">
-                                <input id="first_name" type="string" placeholder="jina la zao" class="form-control" name="first_name" value="{{ old('first_name') }}" required autofocus>
+      <div class="form-group">
+          {!! Form::label('lastName', 'Last Name:') !!}
+          {!! Form::text('last_name', null, ['class' => 'form-control']) !!}
+      </div>
 
-                                @if ($errors->has('first_name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('first_name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-                          <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}" id="nunua">
-                            <label for="name" class="col-md-4 control-label"></label>
+      <div class="form-group">
+          {!! Form::label('email', 'Email address:') !!}
+          {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'email@example.com']) !!}
+      </div>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" placeholder="kiasi" class="form-control" name="name" value="{{ old('surname') }}" required autofocus>
+      <div class="form-group">
+          {!! Form::label('product', 'Select product:') !!}
+          {!! Form::select('product', ['book' => 'Book ($10)', 'game' => 'Game ($20)', 'movie' => 'Movie ($15)'], 'Book', ['class' => 'form-control']) !!}
+      </div>
 
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+      <div class="form-group">
+          {!! Form::label(null, 'Credit card number:') !!}
+          {!! Form::text(null, null, ['class' => 'form-control']) !!}
+      </div>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}" id="nunua">
-                            <label for="email" class="col-md-4 control-label"></label>
+      <div class="form-group">
+          {!! Form::label(null, 'Card Validation Code (3 or 4 digit number):') !!}
+          {!! Form::text(null, null, ['class' => 'form-control']) !!}
+      </div>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" placeholder="bei ya kununulia" class="form-control" name="email" value="{{ old('email') }}" required>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+              {!! Form::label(null, 'Ex. Month') !!}
+              {!! Form::selectMonth(null, null, ['class' => 'form-control'], '%m') !!}
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+              {!! Form::label(null, 'Ex. Year') !!}
+              {!! Form::selectYear(null, date('Y'), date('Y') + 10, null, ['class' => 'form-control']) !!}
+          </div>
+        </div>
+      </div>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+        <div class="form-group">
+            {!! Form::submit('Place order!', ['class' => 'btn btn-primary btn-order', 'id' => 'submitBtn', 'style' => 'margin-bottom: 10px;']) !!}
+        </div>
 
-                       
-                        <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label"></label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" placeholder="" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}" id="nunua">
-                            <label for="phone_number" class="col-md-4 control-label"></label>
-
-                           
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Nunua
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+    {!! Form::close() !!}
+  </div>
+</div>
   </div>
 </div>
 </div>
