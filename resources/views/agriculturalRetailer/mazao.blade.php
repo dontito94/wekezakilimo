@@ -35,11 +35,10 @@
                     @endif
                 </div>
             @endif
-  <a href="{{ url('/farmer/pembejeo') }}" class="list-group-item active">
-    Pembejeo
-  </a>
-  <a href="{{ url('/farmer/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/farmer/Mada') }}" class="list-group-item">Maada</a>
+  <a href="{{ url('/agriculturalRetailer/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
+  <a href="{{ url('/agriculturalRetailer/mazao') }}" class="list-group-item">Mazao</a>
+  <a href="{{ url('/agriculturalRetailer/Mada') }}" class="list-group-item">Mada</a>
+      
       
 </div>
 <div class="col-md-9">

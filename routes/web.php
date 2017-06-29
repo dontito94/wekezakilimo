@@ -56,6 +56,11 @@ Route::get('/farmer/pembejeo', [
 
 'uses' => 'PembejeoController@getIndex'
     ]);
+Route::get('/farmer/create', 'ProductsController@Create');
+
+
+
+
 Route::get('/agriculturalRetailer', function () {
     return view('agriculturalRetailer');
 });
@@ -85,13 +90,20 @@ Route::get('/agriculturalRetailer/pembejeo', [
     ]);
 
 Route::resource('topics', 'TopicController');
-
 Route::get('/farmer/Mada','TopicController@getFarmerMada');
 Route::get('/agriculturalRetailer/Mada','TopicController@getAgriculturalRetailerMada');
 Route::get('/agriculturalInputs/Mada','TopicController@getAgriculturalInputsMada');
 
  
-
+Route::post('products', 'ProductsController@store');
 
 Route::resource('products', 'ProductsController');
 
+ 
+Route::get('mazaos', 'MazaoController@index');
+ 
+Route::get('mazaos/create', 'MazaoController@create');
+ 
+Route::get('mazaos/{id}', 'MazaoController@show');
+ 
+Route::post('mazaos', 'MazaoController@store');

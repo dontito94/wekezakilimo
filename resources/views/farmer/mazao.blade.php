@@ -49,7 +49,7 @@
   <h3><a href="/farmer/mazao">Yaliyopo</a></h3>
 </div>
 <div class="col-md-3">
-  <h3><a href="{!! route('topics.create') !!}">Mazao mapya</a></h3>
+  <h3><a href="/farmer/create">Mazao mapya</a></h3>
 </div>
    </div>
 <hr> 

@@ -17,7 +17,18 @@ class MazaoTableSeeder extends Seeder
             'description'=>'mchele mzuri toka mbeya',
             'price'=>2000
         ]);
-
+        $product = new \App\Product([
+            'imagePath'=>'image/k10.jpg',
+            'title'=>'mchele',
+            'description'=>'mchele mzuri toka mbeya',
+            'price'=>2000
+        ]);
+        $product = new \App\Product([
+            'imagePath'=>'image/k10.jpg',
+            'title'=>'mchele',
+            'description'=>'mchele mzuri toka mbeya',
+            'price'=>2000
+        ]);
 
     }
 }

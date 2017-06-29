@@ -46,13 +46,18 @@ public function getMuuzapembejeoMazao()
      * @param  string  $slug
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
-    {
-        $product = Product::where('slug', $slug)->firstOrFail();
-        $interested = Product::where('slug', '!=', $slug)->get()->random(4);
+    public function Create(){
 
-        return view('product')->with(['product' => $product, 'interested' => $interested]);
+                return view('farmer.create');
+
     }
+public function store(ProductRequest $request)
+{
+  var_dump(request('title'));
+        var_dump(request('price'));
+        var_dump(request('description'));
+        var_dump(request('image'));   
+}
 
 
 }
