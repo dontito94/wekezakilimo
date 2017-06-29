@@ -38,6 +38,7 @@ Route::get('/agriculturalOfficer/pembejeo', function () {
 Route::get('/farmer/home', function () {
     return view('farmer.home');
 });
+
 Route::get('/farmer/mazao', function () {
     return view('farmer.mazao');
 });

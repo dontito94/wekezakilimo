@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="row1">
-<img src="image/wekezakilimo(2).jpg" class="banner">
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
         </div>
         <div class="row">
      <div class="col-md-2">

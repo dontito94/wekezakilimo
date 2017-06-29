@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use Topic;
 
 class TopicController extends AppBaseController
 {
@@ -29,11 +30,12 @@ class TopicController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $this->topicRepository->pushCriteria(new RequestCriteria($request));
+      
+             $this->topicRepository->pushCriteria(new RequestCriteria($request));
         $topics = $this->topicRepository->all();
-
         return view('topics.index')
             ->with('topics', $topics);
+
     }
 
     /**
@@ -151,5 +153,31 @@ class TopicController extends AppBaseController
         Flash::success('Topic deleted successfully.');
 
         return redirect(route('topics.index'));
+    }
+
+
+    public function getFarmerMada(Request $request) {
+
+
+             $this->topicRepository->pushCriteria(new RequestCriteria($request));
+        $topics = $this->topicRepository->all();
+        return view('farmer.mada')
+            ->with('topics', $topics);
+    }
+    public function getAgriculturalRetailerMada(Request $request) {
+
+
+             $this->topicRepository->pushCriteria(new RequestCriteria($request));
+        $topics = $this->topicRepository->all();
+        return view('agriculturalRetailer.mada')
+            ->with('topics', $topics);
+    }
+    public function getAgriculturalInputsMada(Request $request) {
+
+
+             $this->topicRepository->pushCriteria(new RequestCriteria($request));
+        $topics = $this->topicRepository->all();
+        return view('agriculturalInputs.mada')
+            ->with('topics', $topics);
     }
 }

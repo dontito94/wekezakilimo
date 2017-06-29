@@ -3,19 +3,15 @@
 @section('content')
     
            <div class="row1">
-<<<<<<< HEAD:resources/views/agriculturalRetailer/home.blade.php
-<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner">
-=======
-<img src="image/wekezakilimo(2).jpg" class="banner img-responsive">
->>>>>>> c3f065b6f718686e2aace78eee16c31bb2b66549:resources/views/agriculturalRetailer.blade.php
+<img src="{{ URL::asset("image/wekezakilimo(2).jpg") }}" class="banner img-responsive">
         </div>
         <div class="row">
        <div class="col-md-2">
     <div class="list-group">
          
-  <a href="{{ url('/agriculturalOfficer/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
-  <a href="{{ url('/agriculturalOfficer/mazao') }}" class="list-group-item">Mazao</a>
-  <a href="{{ url('/topics/{id}') }}" class="list-group-item">Mada</a>
+ <a href="{{ url('/agriculturalRetailer/pembejeo') }}" class="list-group-item active"> Pembejeo </a>
+  <a href="{{ url('/agriculturalRetailer/mazao') }}" class="list-group-item">Mazao</a>
+  <a href="{{ url('/agriculturalRetailer/Mada') }}" class="list-group-item">Mada</a>
      <!-- Right Side Of Navbar -->
                     <ul class="nav nav-pills">
                         <!-- Authentication Links -->
@@ -50,7 +46,14 @@
 <div class="col-md-8">
  <h3>Mnunuzi</h3>
 <hr> 
-
+  <div class="panel-heading"><strong>Mfanya biashara</strong></div>
+                      <div class="panel-body">
+                              <p>Mfumo unamkutanisha mfanya biashara na mkulima katika kufanya biashara
+                            na pia unaweka ukaribu kati yao.Mfanyabiashara anakuwa na uhuru wa kuchaguwa
+                            bidhaa kutoka kwa wakulima mbalimbali walioko kwenye mfumo.  </p>
+                            <p><a href="#" class="btn btn-info">Endelea >></a></p>
+                            </div>
+                    </div>
 </div>
 </div>
 

@@ -30,9 +30,6 @@
        
         @yield('content')
     </div>
- <footer class="footer">
-          <p class="text-center">wekezakilimo</p>
-        </footer>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
